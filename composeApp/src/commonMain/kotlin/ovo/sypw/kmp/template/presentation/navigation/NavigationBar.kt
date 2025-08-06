@@ -1,5 +1,6 @@
 package ovo.sypw.kmp.template.presentation.navigation
 
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
@@ -24,6 +25,7 @@ fun BottomNavigationBar(
 
     NavigationBar(
         modifier = modifier,
+        windowInsets = WindowInsets(0),
         containerColor = MaterialTheme.colorScheme.surface
     ) {
         navigationItems.forEach { item ->
